@@ -11,6 +11,9 @@ print(is_leap_year(2020))
 
 # Solução
 def is_leap_year(year):
+    
+    '''Verifica se o ano é bissexto.'''
+
     if year % 4 == 0:
         if year % 100 == 0:
             if year % 400 == 0:

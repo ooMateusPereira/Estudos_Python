@@ -41,3 +41,30 @@ def format_name(first, last):
     return f'Resulto: {first_1} {last_1}'
 
 print(format_name(input('Primeiro nome: \n'), input('Segundo nome: \n')))
+
+
+What will be printed in the console after running the following code?
+
+def my_function(a):
+    if a < 40:
+        return
+        print("Terrible")
+    if a < 80:
+        return "Pass"
+    else:
+        return "Great"
+print(my_function(25))
+
+R = None
+
+What would you predict to be the result of running the following code?
+
+def outer_function(a, b):
+    def inner_function(c, d):
+        return c + d
+    return inner_function(a, b)
+ 
+result = outer_function(5, 10)
+print(result)
+
+R = 15
