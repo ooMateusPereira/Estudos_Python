@@ -1,3 +1,7 @@
+from art import *
+Art = text2art('AUCTION')
+print(Art)
+
 pessoas = {}
 todos_jogaram = True
 

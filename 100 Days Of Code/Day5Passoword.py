@@ -1,5 +1,9 @@
 import random
 
+from art import *
+Art = text2art('Gen Password')
+print(Art)
+
 letra = ['A', 'a', 'B', 'b', 'C', 'c', 'D', 'd', 'E', 'e', 'F', 'f', 'G', 'g']
 numeros = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
 simb = ['*', '/', '!', '@', '.']

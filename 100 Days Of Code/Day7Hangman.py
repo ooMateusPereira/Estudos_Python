@@ -1,5 +1,9 @@
 import random
 
+from art import *
+Art = text2art('HANGMAN')
+print(Art)
+
 palavras = ['maria', 'balao', 'mamao']
 
 palavra = random.choice(palavras)  
