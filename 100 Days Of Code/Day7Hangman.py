@@ -1,8 +1,8 @@
 import random
 
-from art import *
-Art = text2art('HANGMAN')
-print(Art)
+from art import tprint
+tprint("CALCULATOR")
+
 
 palavras = ['maria', 'balao', 'mamao']
 
