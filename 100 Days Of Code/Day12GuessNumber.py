@@ -1,4 +1,5 @@
 def GuessNumber():
+    
     import random
     from art import tprint
     tprint('Guess  the  Number')
@@ -21,9 +22,9 @@ def GuessNumber():
                 LIVES -= 1
             
             if pick_numb > RANDOM_NUMBER:
-                print('To high!')
+                print('Too high!')
             elif pick_numb < RANDOM_NUMBER:
-                print('To low!')
+                print('Too low!')
             else:
                 print('You guess the number!')
 
@@ -47,9 +48,9 @@ def GuessNumber():
                 LIVES -= 1
             
             if pick_numb > RANDOM_NUMBER:
-                print('To high!')
+                print('Too high!')
             elif pick_numb < RANDOM_NUMBER:
-                print('To low!')
+                print('Too low!')
             else:
                 print('You guess the number!')
 
