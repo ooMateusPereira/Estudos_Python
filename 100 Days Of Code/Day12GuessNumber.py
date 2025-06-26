@@ -5,10 +5,10 @@ def GuessNumber():
 
     RANDOM_NUMBER = random.randint(1, 100)
     
-    print('You have 5 attempts to discover the number between 1 and 100.\n')
+    print('You have to discover the number between 1 and 100.\n')
 
     def easy():
-        LIVES = 5
+        LIVES = 10
         PLAYNG = True
         
         while PLAYNG:
