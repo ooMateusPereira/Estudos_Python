@@ -93,3 +93,7 @@ def bar():
 bar()
 
 R = 16
+
+# Criar uma lista de 1 a 100
+numbers = list(range(1, 101))
+print(numbers)
