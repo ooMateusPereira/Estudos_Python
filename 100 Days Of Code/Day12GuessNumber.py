@@ -3,7 +3,7 @@ def GuessNumber():
     from art import tprint
     tprint('Guess  the  Number')
 
-    RANDOM_NUMBER = random.randint(1, 100)
+    RANDOM_NUMBER = random.randint(1, 10)
     
     print('You have to discover the number between 1 and 100.\n')
 
@@ -15,15 +15,17 @@ def GuessNumber():
             pick_numb = int(input(f'Pick a number. You have more {LIVES} attempts.\n'))
 
             if pick_numb == RANDOM_NUMBER:
-                print('Good job! You guess the number!')
+                print('Good job!')
                 PLAYNG = False
             else:
                 LIVES -= 1
             
             if pick_numb > RANDOM_NUMBER:
                 print('To high!')
-            else: 
+            elif pick_numb < RANDOM_NUMBER:
                 print('To low!')
+            else:
+                print('You guess the number!')
 
             if LIVES == 0:
                 PLAYNG = False
@@ -39,15 +41,17 @@ def GuessNumber():
             pick_numb = int(input(f'Pick a number. You have more {LIVES} attempts.\n'))
 
             if pick_numb == RANDOM_NUMBER:
-                print('Good job! You guess the number!')
+                print('Good job!')
                 PLAYNG = False
             else:
                 LIVES -= 1
             
             if pick_numb > RANDOM_NUMBER:
                 print('To high!')
-            else: 
+            elif pick_numb < RANDOM_NUMBER:
                 print('To low!')
+            else:
+                print('You guess the number!')
 
             if LIVES == 0:
                 PLAYNG = False
