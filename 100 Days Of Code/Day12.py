@@ -1,5 +1,7 @@
+# Variáveis globais devem ser escritas em maiúsculo. Isso agiliza na hora de ler e interpretar o código.
+
 # Global Scope
-enemies = 1
+ENEMIES = 1
 
 # Local Scope
 def incrise_enemies():
@@ -10,7 +12,7 @@ incrise_enemies()
 print(enemies)
 
 # Global Scope
-player_healt = 10
+PLAYER_HEALTH = 10
 
 # Local Scope
 def game():
@@ -48,3 +50,46 @@ def is_prime(num):
         if num % i == 0:
             return False
     return True
+
+What will be printed in the console when the following code is run?
+
+DO NOT run the code, just pretend to be a computer.
+
+def a_function(a_parameter):
+    a_variable = 15
+    return a_parameter
+ 
+a_function(10)
+print(a_variable)
+
+R = NameError
+
+What will be printed in the console when the code is run?
+
+DO NOT run the code, just pretend to be a computer.
+
+i = 50
+def foo():
+    i = 100
+    return i
+ 
+foo()
+print(i)
+
+R = 50
+
+What will be printed in the console when the following code is run?
+
+DO NOT run the code, just pretend to be a computer.
+
+def bar():
+    my_variable = 9
+ 
+    if 16 > 9:
+      my_variable = 16
+ 
+    print(my_variable)
+ 
+bar()
+
+R = 16
