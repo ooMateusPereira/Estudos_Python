@@ -18,3 +18,13 @@ if year > 1980 and year < 1994: # Where we have a True and a False togheter. Em 
 elif year > 1994:
     print('You are a Gen Z.')
 # 1994 needs be include in Millenial or Gen Z using >= or <=. 
+
+# Exception. Its good to prevent the crash a system.
+try:
+    age = int(input('How old are you?'))
+except ValueError:
+    print('Invalid format. Try to use numbers.')
+    age = int(input('How old are you?'))
+if age > 18:
+    print('You can drive now.')
+
