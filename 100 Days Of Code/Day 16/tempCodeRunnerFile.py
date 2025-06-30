@@ -1,0 +1,1 @@
+timmy.right(350)
