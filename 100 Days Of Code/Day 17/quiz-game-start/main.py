@@ -2,9 +2,9 @@ from question_model import Question
 from data import question_data
 from quiz_brain import QuizBrain
 
-# Peguei as perguntas e resposta de uma pasta e adicionei em uma variável de fácil acesso.
-# Isso é útil quando se trabalha com dados vim da internet em geral.
-# Posso acessar facilmente via dic[0].
+# Peguei as perguntas e resposta de um arquivo (data.py) e adicionei em uma variável de fácil acesso.
+# Isso é útil quando se trabalha com dados vindos da internet em geral.
+# Posso acessar facilmente via dicionário.
 question_bank = []
 for question in question_data:
     question_text = question['text']

@@ -6,4 +6,3 @@ class Question:
         
 quest_1 = Question('texto', 'resposta')
 
-print(quest_1.text, quest_1.answer)
