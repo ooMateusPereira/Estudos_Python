@@ -16,4 +16,4 @@ def binare(list, item):
 
 my_list = [10, 20, 200, 30, 40]
 
-print(binare(my_list, 200))
+print(binare(my_list, 20))
