@@ -1,6 +1,8 @@
-"""
-Comandos do tesseract
+import pytesseract
+import cv2 as cv
+import PIL.Image
 
+"""Comandos do tesseract
 Page segmentation modes:
 O Orientation and script detection (OSD) only
 1 Automatic page segmentation with OSD. ‘
@@ -15,8 +17,8 @@ O Orientation and script detection (OSD) only
 10 Treat the image as a single character.
 11 Sparse text. Find as much text as possible in no particular order.
 12 Sparse text with OSD.
-13 Raw line. Treat the image as a single text line, bypassing hacks that are Tesseract—specific.
+13 Raw line. Treat the image as a single text line, bypassing hacks that are Tesseract—specific."""
 
-C:\Users\mateus\Documents\GitHub\Estudos_Python\Computer Vision\Extract Text>tesseract exampleimg.png stdout
-
-"""
+config = r'--psm 6 --oem 3'
+text = pytesseract.image_to_string(PIL.Image.open('exampleimg.png'), config=config)
+print(text)
